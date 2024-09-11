@@ -1,0 +1,25 @@
+# Ignore log files
+*.log
+
+# Ignore node_modules directory (common in JavaScript/Node.js projects)
+node_modules/
+
+# Ignore compiled Java class files
+*.class
+
+# Ignore Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Ignore OS-specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Ignore IDE/editor specific files
+.idea/
+.vscode/
+*.swp  # vim swap files
+
+# Ignore sensitive configuration files
+.env
+
