@@ -6,28 +6,28 @@ from gilded_rose import Item, GildedRose
 
 class GildedRoseTest(unittest.TestCase):
     def test_foo(self):
-        items = [Item("foo", 0, 0)]
+        items = [Item("Aged Brie", 10, 0)]
         gilded_rose = GildedRose(items)
         gilded_rose.update_quality()
-        self.assertEqual("fixme", items[0].name)
+        self.assertEqual("Aged Brie", items[0].name)
 
     def test_aged_brie(self):
-        items = [Item("Aged Brie", 1, 2)]
+        items = [Item("Aged Brie", 1, 2)] 
         gilded_rose = GildedRose(items)
         gilded_rose.update_quality()
-        self.assertEqual(items[0].quality, 0)
+        self.assertEqual(items[0].quality, 3)
     
     def test_sulfuras(self):
         items = [Item("Sulfuras, Hand of Ragnaros", 2, 5)]
         gilded_rose = GildedRose(items)
         gilded_rose.update_quality()
-        self.assertEqual(items[0].quality, 100)
+        self.assertEqual(items[0].quality, 5)
 
     def test_backstage_passes(self):
         items = [Item("Backstage passes to a TAFKAL80ETC concert", 3, 6)]
         gilded_rose = GildedRose(items)
         gilded_rose.update_quality()
-        self.assertEqual(items[0].quality, 0)
+        self.assertEqual(items[0].quality, 9)
 
     
 
